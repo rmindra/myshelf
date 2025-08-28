@@ -1,0 +1,18 @@
+CREATE TABLE users (
+  id SERIAL PRIMARY KEY,
+  username VARCHAR(50) UNIQUE NOT NULL,
+  password TEXT NOT NULL
+);
+
+CREATE TABLE books (
+  id SERIAL PRIMARY KEY,
+  user_id INTEGER REFERENCES users(id) ON DELETE CASCADE,
+  title VARCHAR(100) NOT NULL,
+  description TEXT DEFAULT '',
+  isbn VARCHAR(20),
+  author VARCHAR(100),
+  status VARCHAR(20) DEFAULT 'unread'
+);
+
+ALTER TABLE books ADD COLUMN cover_image VARCHAR(255);
+ALTER TABLE books ADD COLUMN isbn VARCHAR(20);

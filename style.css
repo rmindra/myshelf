@@ -1,0 +1,37 @@
+.hover-text-pink {
+  color: #f48fb1;
+}
+
+.hover-text-pink:hover {
+  color: #f06292;
+}
+
+.bg-pink {
+  background-color: #f48fb1;
+}
+
+.border-pink {
+  border: 1px solid #f06292;
+}
+
+.hover-pink:hover {
+  background-color: #f06292;
+}
+
+body {
+  background-image: url(./img/back.jpg);
+  background-repeat: repeat-x;
+  font-family: "Comic Sans MS";
+}
+
+.ml-3 {
+  margin-left: 1rem;
+}
+
+.pink-active {
+  background-color: #f06292;
+}
+
+.pink-active:hover {
+  background-color: #d63384;
+}
